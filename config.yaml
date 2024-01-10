@@ -1,6 +1,6 @@
 name: "Home Assistant socat Add-On"
 description: "Run socat as Home Assistant Add-On"
-version: "0.1.0"
+version: "0.1.1"
 slug: "socat"
 init: false
 arch:
@@ -11,7 +11,8 @@ arch:
   - i386
 devices:
   - /dev/ttyUSB0
-  - /dev/ttyV0
+map:
+  - share:rw
 ports:
   12345/tcp: 12345
 options:
